@@ -1,12 +1,12 @@
 import axios from 'axios'
 import Vue from 'vue'
-const { API_URL } = require(`@/config/develop.json`);
-console.log(API_URL)
+
 const fetch = axios.create({
-    baseURL: API_URL||'',
+    baseURL: 'http://localhost:8080/'||'',
     timeOut: 5000,
     // withCredentials: true
 })
+
 fetch.interceptors.request.use(config=>{
     return config;
 },error=>{
@@ -20,4 +20,5 @@ fetch.interceptors.response.use(res=>{
     console.log(error)
     return {};
 })
+
 export default fetch;

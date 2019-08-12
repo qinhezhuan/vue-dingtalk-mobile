@@ -5,8 +5,6 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import App from './App'
 import router from './router'
-import vuet from '@/vuet'
-import './permission'
 
 import '@/assets/css/iconfont.css'
 import 'lib-flexible/flexible'
@@ -17,12 +15,14 @@ Vue.use(MintUI)
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
 
+import * as DingTalkApi from 'dingtalk-jsapi'
+Vue.prototype.DingTalkApi = DingTalkApi
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  vuet,
   router,
   components: { App },
   template: '<App/>'
