@@ -1,5 +1,5 @@
 {
-  "name": "vue-dingtalk-mobile",
+  "name": "vue-weixin-mobile",
   "version": "1.0.0",
   "description": "基于vue-cli扩展的用于移动端web开发的通用脚手架",
   "author": "MericLai",
@@ -10,28 +10,15 @@
     "module": "node build/module.js"
   },
   "main": "index.html",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/unclemeric/vue-dingtalk-mobile.git"
-  },
-  "keywords": [
-    "Vue",
-    "Dingtalk",
-    "Vuet"
-  ],
-  "bugs": {
-    "url": "https://github.com/unclemeric/vue-dingtalk-mobile/issues"
-  },
-  "homepage": "https://github.com/unclemeric/vue-dingtalk-mobile#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "dingtalk-jsapi": "^2.7.6",
     "fastclick": "^1.0.6",
     "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "weixin-js-sdk": "^1.4.0-test"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
